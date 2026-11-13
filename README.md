@@ -12,7 +12,7 @@ The project brief names Cloudflare Pages as the provisional host. No hosting acc
 
 1. An adult account owner should sign in to Cloudflare and create a Pages project connected to the private GitHub repository `2009Juan-Sep/los-rojas-coffee`.
 2. Select branch `prototype/initial-site` for the first prototype.
-3. Choose **None** as the framework preset. Leave the build command empty and set the output directory to `/` (the repository root).
+3. Choose **None** as the framework preset. Leave the build command blank and set the build output directory to `.` (the repository root, where `index.html` lives).
 4. Start the deployment and wait for Cloudflare to show a successful build and HTTPS `pages.dev` address.
 5. Open the public address on desktop and mobile, confirm that the page loads over HTTPS and that both language choices work. Add a custom domain only after its adult owner registers and configures it.
 
