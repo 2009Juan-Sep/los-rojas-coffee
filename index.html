@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f0e7" />
+    <meta name="description" content="Los Rojas Coffee — café de Finca Bella Vista, Manaure, Cesar, Colombia." />
+    <title>Los Rojas Coffee — Café de origen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Los Rojas Coffee, inicio">
+        <span class="brand-mark" aria-hidden="true">LR</span>
+        <span class="brand-name">LOS ROJAS <span>COFFEE</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#catalog" data-i18n="navCatalog">Catálogo</a>
+        <a href="#origin" data-i18n="navOrigin">Origen</a>
+        <a href="#process" data-i18n="navProcess">Proceso</a>
+      </nav>
+      <div class="header-actions">
+        <a class="contact-link" href="#contact" data-i18n="navContact">Contacto</a>
+        <div class="language-switch" role="group" aria-label="Seleccionar idioma">
+          <button type="button" data-lang="es" aria-pressed="true">ES</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" data-i18n-aria="menuLabel">Menú</button>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Navegación móvil" hidden>
+        <a href="#catalog" data-i18n="navCatalog">Catálogo</a>
+        <a href="#origin" data-i18n="navOrigin">Origen</a>
+        <a href="#process" data-i18n="navProcess">Proceso</a>
+        <a href="#contact" data-i18n="navContact">Contacto</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">Café de origen · Manaure, Cesar</p>
+          <h1 data-i18n="heroTitle">Una finca.<br /><em>Una forma de hacer.</em></h1>
+          <p class="hero-text" data-i18n="heroText">Conoce el café de Finca Bella Vista y los detalles confirmados detrás de cada lote.</p>
+          <a class="button button-dark" href="#catalog"><span data-i18n="heroCta">Explorar el café</span><span aria-hidden="true">↘</span></a>
+          <p class="hero-note"><span class="dot"></span><span data-i18n="heroNote">Finca Bella Vista · Colombia</span></p>
+        </div>
+        <div class="hero-art" role="img" data-i18n-aria="heroArtLabel" aria-label="Composición gráfica abstracta en tonos café y arena">
+          <div class="art-sun"></div>
+          <div class="art-hill art-hill-back"></div>
+          <div class="art-hill art-hill-front"></div>
+          <div class="art-stem"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="art-label"><span>LOS ROJAS</span><small>FINCA BELLA VISTA<br />COLOMBIA</small></div>
+          <span class="art-caption" data-i18n="artCaption">Origen · Proceso · Cuidado</span>
+        </div>
+        <div class="hero-index"><span>01</span><span class="index-line"></span><span>04</span></div>
+      </section>
+
+      <section class="intro-strip">
+        <p data-i18n="introStrip">Cultivado y procesado en Finca Bella Vista, Manaure, Cesar.</p>
+        <span aria-hidden="true">✳</span>
+        <p data-i18n="introStrip2">Una historia familiar que sigue creciendo.</p>
+      </section>
+
+      <section class="section catalog-section" id="catalog">
+        <div class="section-heading">
+          <div><p class="eyebrow" data-i18n="catalogEyebrow">Los cafés</p><h2 data-i18n="catalogTitle">Conoce el catálogo</h2></div>
+          <p class="section-lede" data-i18n="catalogLead">Una presentación clara de lo que sabemos hoy. Los detalles de cada producto se actualizarán cuando estén confirmados.</p>
+        </div>
+        <div class="catalog-grid">
+          <article class="catalog-card card-featured">
+            <div class="card-art card-art-bean" aria-hidden="true"><span class="bean-shape"></span><span class="card-number">01</span><span class="card-art-caption">FINCA<br />BELLA VISTA</span></div>
+            <div class="card-body"><div class="card-kicker"><span data-i18n="portfolioLabel">Portafolio de finca</span><span class="tag" data-i18n="inProgress">En construcción</span></div><h3 data-i18n="portfolioTitle">Café Los Rojas</h3><p data-i18n="portfolioText">La marca comunica variedades Tabi, Caturro y Castillo, y presentaciones de 250 g y 500 g. La oferta, composición y tueste por producto aún no están definidos.</p><a href="#contact" class="text-link"><span data-i18n="askAvailability">Consulta próximamente</span><span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="catalog-card">
+            <div class="card-art card-art-report" aria-hidden="true"><span class="report-seal">86<small>,50</small></span><span class="card-number">02</span><span class="report-lines"></span><span class="card-art-caption">SAMPLE<br />REPORT · 2024</span></div>
+            <div class="card-body"><div class="card-kicker"><span data-i18n="reportLabel">Análisis documentado</span><span class="tag tag-light">24.11.2024</span></div><h3 data-i18n="reportTitle">Castillo Honey</h3><p data-i18n="reportText">Muestra evaluada en 2024: 86,50 puntos. Perfil registrado con notas cítricas, naranja, mandarina, especias, caramelo y miel.</p><a href="#report" class="text-link"><span data-i18n="readReport">Ver datos de la muestra</span><span aria-hidden="true">↘</span></a></div>
+          </article>
+        </div>
+        <p class="catalog-footnote"><span aria-hidden="true">✳</span><span data-i18n="catalogFootnote">El análisis de 2024 corresponde únicamente a esa muestra; no describe automáticamente la oferta actual.</span></p>
+      </section>
+
+      <section class="origin-section" id="origin">
+        <div class="origin-image" role="img" data-i18n-aria="originArtLabel" aria-label="Ilustración abstracta de paisaje de montaña en tonos tierra">
+          <div class="origin-circle"></div><div class="origin-ridge ridge-one"></div><div class="origin-ridge ridge-two"></div><span class="origin-coordinate">MANAURE<br />CESAR · CO</span>
+        </div>
+        <div class="origin-copy">
+          <p class="eyebrow" data-i18n="originEyebrow">El lugar</p>
+          <h2 data-i18n="originTitle">Finca Bella Vista</h2>
+          <p class="origin-location">Manaure, Cesar<br />Colombia</p>
+          <p data-i18n="originText">En Finca Bella Vista, Gladys Rojas es propietaria y lidera la producción. La historia detallada de la finca está pendiente de ser compartida por la familia.</p>
+          <a class="text-link" href="#process"><span data-i18n="originCta">Conoce el proceso</span><span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="origin-aside"><span>02</span><span class="aside-rule"></span><span data-i18n="originAside">El origen, contado con claridad.</span></div>
+      </section>
+
+      <section class="section process-section" id="process">
+        <div class="process-head"><p class="eyebrow" data-i18n="processEyebrow">Cómo se procesa</p><h2 data-i18n="processTitle">El método Honey</h2><p data-i18n="processLead">Un paso importante en el carácter de cada lote.</p></div>
+        <div class="process-content">
+          <div class="process-graphic" aria-hidden="true"><div class="process-ring"></div><div class="process-core">H</div><span class="process-word word-one">CAFÉ</span><span class="process-word word-two">MUCÍLAGO</span><span class="process-word word-three">SECADO</span><span class="process-word word-four">HONEY</span></div>
+          <div class="process-text"><p data-i18n="processText">En el proceso Honey se conserva parte del mucílago natural del café durante el secado. Este método puede reducir el uso de agua frente a determinados procesos de beneficio lavado.</p><p data-i18n="processText2">En Los Rojas Coffee trabajamos para comunicar con transparencia el origen, el procesamiento y la calidad de cada lote.</p><div class="process-callout"><span>✳</span><p data-i18n="processCallout">Cada lote tiene sus propios datos. Compartimos resultados solo cuando están documentados.</p></div></div>
+        </div>
+      </section>
+
+      <section class="report-section" id="report">
+        <div class="report-top"><p class="eyebrow" data-i18n="reportEyebrow">Una muestra, un momento</p><span class="report-date">24 / 11 / 2024</span></div>
+        <div class="report-title-row"><h2 data-i18n="reportSectionTitle">Castillo Honey,<br /><em>evaluado en 2024.</em></h2><p data-i18n="reportSectionLead">Resultados de una muestra de café analizada el 24 de noviembre de 2024. Informe de análisis sensorial: Gladys Rojas, Manaure, Cesar.</p></div>
+        <div class="score-row"><div class="score-main"><span data-i18n="sampleScore">Puntaje de la muestra</span><strong>86<span>,50</span></strong><small data-i18n="sampleScoreSource">Análisis sensorial · 2024</small></div>
+          <div class="score-details"><div><span data-i18n="variety">Variedad</span><strong>Castillo</strong></div><div><span data-i18n="process">Proceso</span><strong>Honey</strong></div><div><span data-i18n="producer">Productora</span><strong>Gladys Rojas</strong></div><div><span data-i18n="origin">Origen</span><strong>Manaure, Cesar</strong></div></div>
+        </div>
+        <div class="tasting-row"><div class="tasting-notes"><span class="eyebrow" data-i18n="tastingNotes">Notas registradas</span><div class="notes-list"><span data-i18n="noteOne">Cítrico</span><span data-i18n="noteTwo">Naranja</span><span data-i18n="noteThree">Mandarina</span><span data-i18n="noteFour">Especias</span><span data-i18n="noteFive">Caramelo</span><span data-i18n="noteSix">Miel</span></div><p data-i18n="tastingDescription">Sabor cítrico intenso y miel, acidez media fina y cítrica, cuerpo consistente y residual limpio y especiado.</p></div>
+          <div class="cup-score"><span class="eyebrow" data-i18n="cupScoreLabel">Puntaje del catador</span><strong>8,50</strong><div class="meter"><span style="width:85%"></span></div><span class="cup-score-caption" data-i18n="cupScoreCaption">Escala del informe</span></div>
+        </div>
+        <p class="report-caveat" data-i18n="reportCaveat">Estos resultados pertenecen únicamente a la muestra Castillo Honey evaluada en 2024. No representan automáticamente otros lotes ni la producción actual.</p>
+      </section>
+
+      <section class="contact-section" id="contact"><div><p class="eyebrow" data-i18n="contactEyebrow">Hablemos de café</p><h2 data-i18n="contactTitle">Pronto, más cerca.</h2><p data-i18n="contactText">Los canales de contacto comercial se publicarán cuando la marca los confirme.</p></div><span class="contact-mark" aria-hidden="true">LR</span></section>
+    </main>
+
+    <footer class="site-footer"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">LR</span><span class="brand-name">LOS ROJAS <span>COFFEE</span></span></a><span data-i18n="footerOrigin">Finca Bella Vista · Manaure, Cesar, Colombia</span><a href="#top" class="back-top"><span data-i18n="backTop">Volver arriba</span> ↑</a><small>© <span id="year"></span> Los Rojas Coffee</small></footer>
+  </body>
+</html>
